@@ -104,8 +104,13 @@ a.categories:active {
 
 
 .img_description{
+  display: flex;
+  position: relative;
   text-align: center;
-}
+  justify-content: center;
+
+  font-weight: bold;
+  }
 .add-item{
   display: flex;
   flex-wrap: wrap;
@@ -118,6 +123,18 @@ a.categories:active {
   text-align: center;
   margin: auto;
 } 
+.add-item, .more {
+  float: left;
+  margin: 0 6px;
+}
+.more{
+  width: 80px;
+  height: 30px;
+  font-weight: bolder;
+  font-size:12px ;
+  background-color: rgba(255, 0, 0, 0.63);
+  text-align: center;
+}
 
 #nav-menu {
   display: none;
