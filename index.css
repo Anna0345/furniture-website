@@ -106,14 +106,10 @@ a.categories:active {
 .img_description{
   display: flex;
   position: relative;
-  text-align: center;
-  justify-content: center;
-
+  text-align: left;
   font-weight: bold;
   }
 .add-item{
-  display: flex;
-  flex-wrap: wrap;
   width: 80px;
   height: 30px;
   background:rgb(255, 226, 133);
@@ -122,6 +118,7 @@ a.categories:active {
   font-weight: bold;
   text-align: center;
   margin: auto;
+  border-radius: 20% 20% 20% 20%;
 } 
 .add-item, .more {
   float: left;
@@ -132,8 +129,9 @@ a.categories:active {
   height: 30px;
   font-weight: bolder;
   font-size:12px ;
-  background-color: rgba(255, 0, 0, 0.63);
+  background-color: rgb(201, 57, 88);
   text-align: center;
+  border-radius: 20% ;
 }
 
 #nav-menu {
