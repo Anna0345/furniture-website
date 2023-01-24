@@ -1,4 +1,4 @@
-
+/* basic heading styles */
 .flexMain {
   display: flex;
   justify-content: center;
@@ -21,6 +21,9 @@ ul {
 
 #topbar {
   background: rgb(255, 226, 133);
+  font-size: 1.1rem;
+  font-family:'Times New Roman', Times, serif;
+
 }
 
 #mainNavigation {
@@ -31,12 +34,12 @@ ul {
 
 #mainNavigation a {
   text-decoration: none;
-  color: #232323;
+  color: #030202;
   font-weight: bold;
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1em;
   font-family: 'Playfair Display', serif;
 }
@@ -53,14 +56,15 @@ ul {
 section {
   display: flex;
 }
-
+/* side bar content styles */
 #sidebar {
   display: flex;
   flex-direction: column;
   width: 200px;
   background-color: none;
-  padding-right: 40px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 40px;
+  margin-right: 100px;
   top: 50%;
   transform: translateY(+10%);
 }
@@ -79,6 +83,7 @@ a.categories:active {
   background-color: #333; 
 }
 
+/* image styling */
 .img-container{
   display: inline-flex; 
   flex-wrap: wrap;
@@ -91,7 +96,7 @@ a.categories:active {
 }
 .my_products{
   display: inline-flex;
-  height:300px;
+  height:75%;
   width: 250px;
   flex: 0 0 calc(33.33% - 30px);   /* flex-basis adjustment for margin */
   margin: 5px;
@@ -103,12 +108,16 @@ a.categories:active {
 }
 
 
+
 .img_description{
   display: flex;
   position: relative;
-  text-align: left;
-  font-weight: bold;
+  text-align: center;
+  color: #1b1919;
   }
+  
+  
+/* button styles */
 .add-item{
   width: 80px;
   height: 30px;
@@ -129,14 +138,22 @@ a.categories:active {
   height: 30px;
   font-weight: bolder;
   font-size:12px ;
-  background-color: rgb(201, 57, 88);
+  background-color: rgb(196, 149, 159);
   text-align: center;
   border-radius: 20% ;
 }
-
+  .add-item:hover{
+ background-color: #ff9000; /* slightly darker orange on hover */
+  transform: scale(1.1); /* slightly larger on hover */
+  }
+  .more:hover{
+    background-color: #af4856; 
+    transform: scale(1.1); /* slightly larger on hover */
+  }
 #nav-menu {
   display: none;
 }
+/* for cart to stay, when clicking on the add to cart button and some basic styling*/
 #nav-menu.show {
   display: block;
 }
@@ -169,7 +186,7 @@ a.categories:active {
   #sidebar { display:none;
 }
 }
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .d-md-none {
     display: none;
   }
@@ -177,7 +194,7 @@ a.categories:active {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .img-container{
       justify-content: center;
   }
