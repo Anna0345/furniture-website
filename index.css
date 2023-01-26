@@ -153,8 +153,8 @@ a.categories:active {
 #nav-menu {
   display: none;
 }
-/* for cart to stay, when clicking on the add to cart button and some basic styling*/
-#nav-menu.show {
+/*for cart to stay, when clicking on the add to cart button and some basic styling*/
+ #nav-menu.show {
   display: block;
 }
 #cartIcon {
@@ -177,6 +177,7 @@ a.categories:active {
 #cartIcon[data-count]:before {
   display: block;
 }
+
 
 
 @media screen and (max-width:656px) {

@@ -32,5 +32,4 @@ let brandLink = document.getElementById('brandLink')
           cartIcon.setAttribute("data-count", cartValue);
       });
   });
-  
 
